@@ -9,14 +9,16 @@
         <version>1.0.0.BUILD-SNAPSHOT</version>
         <relativePath>../wallride-parent</relativePath>
     </parent>
+
+    <properties>
+        <start-class>org.wallride.bootstrap.Bootstrap</start-class>
+        <packaging.type>jar</packaging.type>
+    </properties>
+
     <artifactId>wallride-bootstrap</artifactId>
     <packaging>${packaging.type}</packaging>
     <name>WallRide Bootstrap</name>
     <description>CMS for developers of principles</description>
-
-    <properties>
-        <start-class>org.wallride.bootstrap.Bootstrap</start-class>
-    </properties>
 
     <pluginRepositories>
         <pluginRepository>
@@ -50,6 +52,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.0.RELEASE</version>
                 <configuration>
                     <executable>true</executable>
                     <skip>false</skip>
