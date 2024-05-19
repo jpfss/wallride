@@ -13,6 +13,7 @@
     <properties>
         <start-class>org.wallride.bootstrap.Bootstrap</start-class>
         <packaging.type>jar</packaging.type>
+        <mysql.version>8.0.33</mysql.version>
     </properties>
 
     <artifactId>wallride-bootstrap</artifactId>
@@ -38,6 +39,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
 
         <!-- PostgreSQL Driver -->

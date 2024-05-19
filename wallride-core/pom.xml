@@ -14,6 +14,10 @@
 	<name>WallRide Core</name>
 	<description>CMS for developers of principles</description>
 
+	<properties>
+		<mysql.version>8.0.33</mysql.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -258,6 +262,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
